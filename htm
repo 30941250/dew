@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Perfil Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card" id="profileCard">
+            <div class="profile-image-container">
+                <div class="profile-image" id="profileImage"></div>
+            </div>
+            <h2 class="profile-name" id="profileName">María García</h2>
+            <p class="profile-title">Desarrolladora Frontend</p>
+            <div class="profile-info">
+                <p class="profile-description">Apasionada por crear experiencias web interactivas y accesibles.</p>
+                <ul class="skills-list">
+                    <li class="skill" data-skill="HTML5">HTML5</li>
+                    <li class="skill" data-skill="CSS3">CSS3</li>
+                    <li class="skill" data-skill="JavaScript">JavaScript</li>
+                    <li class="skill" data-skill="React">React</li>
+                </ul>
+            </div>
+            <div class="profile-actions">
+                <button class="action-btn" id="toggleInfo">Mostrar más</button>
+                <button class="action-btn" id="changeTheme">Cambiar tema</button>
+            </div>
+            <div class="additional-info" id="additionalInfo">
+                <h3>Acerca de mí</h3>
+                <p>Con 5 años de experiencia en desarrollo web, me especializo en crear interfaces de usuario atractivas y funcionales. Me encanta aprender nuevas tecnologías y compartir conocimientos con la comunidad.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
