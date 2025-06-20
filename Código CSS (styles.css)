@@ -1,0 +1,209 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Estilos de la tarjeta */
+.profile-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Contenedor de la imagen */
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('https://randomuser.me/api/portraits/women/44.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Información del perfil */
+.profile-name {
+    text-align: center;
+    margin: 0 0 5px 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.profile-title {
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: #666;
+    font-weight: 300;
+}
+
+.profile-description {
+    text-align: center;
+    padding: 0 30px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Lista de habilidades */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 30px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.skill {
+    background-color: #f0f0f0;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.skill:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+/* Botones de acción */
+.profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 30px 30px;
+}
+
+.action-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #5a52d3;
+    transform: translateY(-2px);
+}
+
+/* Información adicional */
+.additional-info {
+    padding: 0 30px 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.additional-info h3 {
+    margin-top: 0;
+    color: #444;
+}
+
+.additional-info p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.social-link:hover {
+    color: #5a52d3;
+}
+
+/* Estilos para cuando la información adicional está visible */
+.additional-info.visible {
+    max-height: 500px;
+    padding: 20px 30px 30px;
+}
+
+/* Estilos para tema oscuro */
+.profile-card.dark {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.profile-card.dark .profile-name,
+.profile-card.dark .profile-title,
+.profile-card.dark .profile-description,
+.profile-card.dark .additional-info h3,
+.profile-card.dark .additional-info p {
+    color: #f5f5f5;
+}
+
+.profile-card.dark .skill {
+    background-color: #444;
+    color: #f5f5f5;
+}
+
+.profile-card.dark .skill:hover {
+    background-color: #555;
+}
+
+.profile-card.dark .action-btn {
+    background-color: #8a85ff;
+}
+
+.profile-card.dark .action-btn:hover {
+    background-color: #6c63ff;
+}
+
+/* Diseño responsivo */
+@media (max-width: 400px) {
+    .profile-card {
+        max-width: 100%;
+    }
+    
+    .profile-actions {
+        flex-direction: column;
+    }
+    
+    .action-btn {
+        width: 100%;
+    }
+}
